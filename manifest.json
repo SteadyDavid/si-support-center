@@ -1,7 +1,7 @@
 {
   "name": "Steady Install Support Center",
   "author": "David Esparza",
-  "version": "3.1.2",
+  "version": "3.3.0",
   "api_version": 3,
   "default_locale": "en-us",
   "settings": [
