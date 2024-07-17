@@ -1,7 +1,7 @@
 {
-  "subdomain": "",
-  "username": "",
-  "password": "",
+  "subdomain": "steadyinstall.zendesk.com",
+  "username": "david@steadyinstall.com",
+  "password": "SteadyInstall1",
   "urls": [
     "https://***.zendesk.com/hc/en-us",
     "https://***.zendesk.com/hc/en-us/categories/:id",
