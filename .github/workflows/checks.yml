@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: zendesk/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Lint all commit messages
@@ -38,7 +38,7 @@ jobs:
       - name: Setup Node.js
         uses: zendesk/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: ESlint
@@ -54,7 +54,7 @@ jobs:
       - name: Setup Node.js
         uses: zendesk/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Test
@@ -70,7 +70,7 @@ jobs:
       - name: Setup Node.js
         uses: zendesk/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: ".nvmrc"
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Build
