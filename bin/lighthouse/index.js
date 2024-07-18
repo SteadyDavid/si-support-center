@@ -41,8 +41,8 @@ const outputAudit = (
 
   // Set login URL
   account.loginUrl = isDev
-    ? `https://${account.subdomain}.zendesk.com/hc/admin/local_preview/start`
-    : `https://${account.subdomain}.zendesk.com/hc/en-us/signin`;
+    ? `https://${account.subdomain}/hc/admin/local_preview/start`
+    : `https://${account.subdomain}/hc/en-us/signin`;
 
   // Output account
   console.log("Account:");
