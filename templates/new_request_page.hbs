@@ -21,22 +21,9 @@
 
   <h1>
     {{t "submit_a_request"}}
-    <span class="follow-up-hint">
-      {{#if follow_up}}
-        {{follow_up}}
-      {{else}}
-        <!-- Placeholder text if follow_up is not provided -->
-        No follow-up information available.
-      {{/if}}
-    </span>
   </h1>
 
   <div id="main-content" class="form">
-    {{#if request_form}}
-      {{request_form wysiwyg=true}}
-    {{else}}
-      <!-- Placeholder text if request_form is not provided -->
-      The request form is currently unavailable.
-    {{/if}}
+    <!-- Form content will go here -->
   </div>
 </div>
