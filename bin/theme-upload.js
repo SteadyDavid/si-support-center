@@ -8,6 +8,7 @@ if (!brandId) {
 
 function zcli(command) {
   try {
+    console.log(`Executing command: yarn --silent zcli ${command}`);
     const data = execSync(`yarn --silent zcli ${command} --json`);
     return JSON.parse(data.toString());
   } catch (error) {
