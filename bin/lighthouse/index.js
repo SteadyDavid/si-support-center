@@ -12,15 +12,14 @@ const outputAudit = (
   { title, description, url, id, selector, snippet, explanation },
   emoji
 ) => {
-  console.log("");  
+  console.log("");
   console.log(`${emoji} ${id}: ${title}`);
   console.log(description, "\n");
   console.log({ url, selector, snippet }, "\n");
   console.log(explanation, "\n");
-}
+};
 
 (async () => {
-  // TODO: If dev, check if zcli is running
   const isDev = process.argv[2] === "-d";
   const results = {
     stats: {},
@@ -70,7 +69,7 @@ const outputAudit = (
     console.log(`Running lighthouse in ${url}`);
 
     const page = await browser.newPage();
-    
+
     const { lhr } = await lighthouse(
       url,
       { port: new URL(browser.wsEndpoint()).port, logLevel: "silent" },
