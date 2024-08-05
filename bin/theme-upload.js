@@ -36,12 +36,6 @@ try {
   const { themes } = zcli(`themes:list --brandId=${brandId}`);
   console.log(`Fetched list of themes for brandId ${brandId}`);
 
-  for (const { live, id } of themes) {
-    if (!live) {
-      zcli(`themes:delete --themeId=${id}`);
-      console.log(`Deleted theme with ID: ${id}`);
-    }
-  }
 } catch (error) {
   console.error(
     "An error occurred during the theme upload process:",
